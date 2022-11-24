@@ -1,0 +1,25 @@
+* {
+body: 0;
+padding: 0;
+}
+
+.navBar{
+background-color: black;
+}
+
+.navList{
+list-style-type: none;
+}
+
+ul li a{
+text-decoration: none;
+color: #FFFFFF;
+}
+
+.active{
+background-color: green;
+}
+
+.navList li:hover{
+background-color: lightgreen;
+}
