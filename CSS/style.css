@@ -1,0 +1,71 @@
+Body {
+margin: 0;
+padding: 0;
+}
+
+.navBar{
+    background-color: black;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navList li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+li a:hover {
+  background-color: #008822;
+}
+
+.title{
+    text-align: center;
+}
+
+.intro{
+    margin-left: 40px;
+    text-indent: 100px;
+    margin-right: 40px;
+}
+
+.top10{
+    margin: 10px;
+    margin-left: 40px;
+}
+
+.active{
+    background-color: #008822
+}
+
+img {
+    width: 500px;
+    height: :500px;
+}
+
+.adjust{
+    text-indent: 100px;
+    padding-right: 750px;
+}
+
+.infoSec{
+    height: 500px;
+}
+
+footer{
+    background-color: forestgreen;
+    color: whitesmoke;
+}
