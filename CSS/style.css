@@ -1,4 +1,4 @@
-Body {
+body {
 margin: 0;
 padding: 0;
 }
@@ -49,20 +49,6 @@ li a:hover {
 
 .active{
     background-color: #008822
-}
-
-img {
-    width: 500px;
-    height: :500px;
-}
-
-.adjust{
-    text-indent: 100px;
-    padding-right: 750px;
-}
-
-.infoSec{
-    height: 500px;
 }
 
 footer{
