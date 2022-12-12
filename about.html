@@ -3,20 +3,27 @@
 <head>
     <!--Link to CSS Styleshhet-->
     <link rel = "stylesheet" href="CSS/style.css">
+    <link rel = "stylesheet" href = "CSS/style.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <script src="script.js"></script>    
     <title>iTour</title>
 </head>
 <body>
-    <div class = "navBar"> 
-         <ul class = "navList"> 
-             <li><a href="index.html" >Home</a></li> 
-             <li class = "active"><a href="" >About</a></li> 
-             <li><a href="sources.html" >Sources</a></li> 
-             <li><a href="destination.html">Destination</a></li>
-         </ul> 
-     </div>
-    <h1>&#9432; About iTour</h1>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <center><img src = "images/logo.png" alt = "iTour logo" class = "icsLogo"></center>
+        <a href="index.html" >Home</a>
+        <a href="about.html">About</a>
+        <a href="sources.html">Sources</a>
+        <a href="destination.html">Destination</a>
+    </div>
+    <div class = "bar">
+            <div id="main">
+                <button class="openbtn" onclick="openNav()">&#9776; iTour</button>
+            </div>
+        </div>
+    <h1 style = "margin-top: 0px;">&#9432; About iTour</h1>
     <p align = "justify">This website was created in 2022 to express our personal top 10 regarding the top 10 tourist spot in Bicol Region.</p>
 </body>
 </html>

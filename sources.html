@@ -4,20 +4,25 @@
 <head>
     <title>iTour</title>
     <link rel = "stylesheet" href = "CSS/style.css">
+    <link rel = "stylesheet" href = "CSS/style.min.css">
     <meta name= "viewport" content="width=device-width, initial-scale = 1.0">
+    <script src = "script.js"></script>
 </head>
 <body>
-    <div class = "navBar"> 
-        <ul class = "navList"> 
-            <li><a href="index.html" >Home</a></li> 
-            <li><a href="about.html" >About</a></li> 
-            <li class = "active"><a href="sources.html" >Sources</a></li> 
-            <li><a href="destination.html">Destination</a></li>
-        </ul> 
-    </div>
-    <div class = "title"> 
-        <h1>REFERENCES</h1> 
-    </div> 
+    <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <center><img src = "images/logo.png" alt = "iTour logo" class = "icsLogo"></center>
+            <a href="index.html" >Home</a>
+            <a href="about.html">About</a>
+            <a href="sources.html">Sources</a>
+            <a href="destination.html">Destination</a>
+        </div>
+        <div class= "bar">
+            <div id="main">
+                <button class="openbtn" onclick="openNav()">&#9776; iTour</button>
+            </div>
+        </div>
+     <h1 style = "margin-top: 0px;">REFERENCES</h1> 
      <ol style="list-style: circle;">
         <li>
             https://www.britannica.com/place/Mayon-Volcano

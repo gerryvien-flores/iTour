@@ -3,46 +3,51 @@
     <head>
         <title>iTour</title>
         <link rel = "stylesheet" href = "CSS/style.css">
+        <link rel = "stylesheet" href = "CSS/style.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+        <link rel = "stylesheet" href = "http://fonts.googleapis.com/css?family=Raleway:400,500,300,700">
         <meta name= "viewport" content="width=device-width, initial-scale = 1.0">
+        <script src="script.js"></script>
     </head>
     <body>
-         <div class = "navBar"> 
-             <ul class = "navList"> 
-                 <li class = "active"><a href="" >Home</a></li> 
-                 <li><a href="about.html" >About</a></li> 
-                 <li><a href="sources.html" >Sources</a></li> 
-                 <li><a href="destination.html">Destination</a></li>
-             </ul> 
-         </div>
-        <div class = "title"> 
-            <h1><i class="fa-solid fa-plane-departure"></i>iTour</h1> 
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <center><img src = "images/logo.png" alt = "iTour logo" class = "icsLogo"></center>
+            <a href="index.html" >Home</a>
+            <a href="about.html">About</a>
+            <a href="sources.html">Sources</a>
+            <a href="destination.html">Destination</a>
         </div>
-        <div> 
+        <section class = "bar">
+            <div id="main">
+                <button class="openbtn" onclick="openNav()">&#9776;</button>
+            </div>
+        </section>
+        <img class = "airplane" id = "fly" src = "images/flying-airplane.gif" alt = "flying airplane">
+        <center><h1>iTour: SEEK, EXPLORE, DISCOVER! </h1></center>
+        <div style = "margin-top: 20px; "> 
              <p align = "justify" class = "intro">The Bicol region, also known administratively as Region V, is situated near the southeasterly tip of Luzon. Lamon Bay, the Visayan Sea, the Pacific Ocean, the Sibugan Sea, and Quezon Province form its northern, eastern, southern, and western borders, respectively. This region is comprised with six provinces namely Albay, Camarines Norte, Camarines Sur, Catanduanes, Masbate, and Sorsogon. Bicol has a rough terrain. The tiny stretches of plain, which are mostly in Camarines Sur and Albay, are dwarfed by its hills. These include the Bulusan Volcano in Sorsogon, Mount Iriga, Mount Isarog, and the Calinigan mountain range in Camarines Sur, as well as the Mayon Volcano, Mount Malinao, and Mount Masaraga in Albay. The Lagonoy, Ragay, Albay, and Asian Gulf, the Sibugon Sea, Burias Pass, Ticao Pass, and Maqueda Channel, as well as the freshwater lakes of Buhi, Bato, and Baao in Camarines Sur and Bulusan Lake in Sorsogon, are significant bodies of water. Lamon Bay and San Miguel Bay are another important body of water. Over the region, it rains frequently and strongly; the annual precipitation averages over 2 meters, with Baras in Catanduanes having the highest amount—5.4 meters—in the nation. 
              </p> 
-             
+
             <h2 style = "text-indent: 40px;">A History of Bicol</h2>
-            <p align = "justify" class = "intro">Bicol Region or Bicolandia is one of the 16 regions of the Philippines occupying the Bicol Peninsula at the southeastern end of Luzon island and some other islands. It consists of six provinces, namely, Albay, Camarines Norte, Camarines Sur, Catanduanes, Masbate, and Sorsogon. It has one independent chartered city, Naga City, and six component cities, Iriga City, Legazpi City, Ligao City, Masbate City, Sorsogon City, and Tabaco City. The regional centers are Legazpi City, the region's political Center, and Naga City, the region's most progressive city and its commercial, educational, financial, religious, and cultural center. Inhabitants, called “Bicolanos,” speak any one of several dialects, including Bikol Rinconada (Iriga-Buhi area), Bikol Albay(Albay Province), Bikol Sorsogon (Sorsogon), Bikol Catanduanes and Bikol Partido (municipalities surrounding Lagonoy Gulf). StandardBikol is Bikol Naga, and it is generally understood by other Bikolspeakers. The Bicol region is often seen as the epicenter of the counter-culture and liberal politics in the Philippines. As many of its inhabitants seem to oppose many right-wing governments and ideology in which they blame for corruption. The region has a political reputation for voting always for the opposition. It is also widely seen as a stronghold for the National Democratic Front. Albay's archaeology shows concrete evidence of trade with China and Malaya/Indonesia going back two thousand years. The first Spanish contact was in 1565 when a treasure galleon returning to Cebu from Acapulco, Mexico, was swept off course and the captain recorded his awe at the sight of Mt. Mayon erupting. Mt.Mayon is the most prominent of the several volcanoes in the province, and one of the most famous jewels of the Pacific Ring of Fire; its eruptions have repeatedly inflicted disaster on the province and enriched the survivors. When at peace, it is a particularly beautiful mountain. Albay has a large amount of rich flat land, and agriculture is the largest component of the provincial economy. Coconuts, rice, abaca, and maize are the chief crops. Handicrafts bolster rural incomes. Commercial fishing is also important, and the province has several thousand manufacturing enterprises. There are plenty of places to visit, offering opportunities to swim at beautiful beaches, scuba-dive to wrecked galleons, explore caves, climb volcanoes, admire waterfalls, lush vegetation, Baroque architecture, etc. Gold mining and jewelry manufacturing continue to distinguish the province. Agriculture and fishing are major factors in the province's economy, and several handicrafts and small-scale industries are widely practiced. Tourism is insignificant, though Daethas become a destination for surfers. Bicol is composed of six provinces and 7 cities.</p>
-            
+            <p align = "justify" class = "intro">Bicol Region or Bicolandia is one of the 16 regions of the Philippines occupying the Bicol Peninsula at the southeastern end of Luzon island and some other islands. It consists of six provinces, namely, Albay, Camarines Norte, Camarines Sur, Catanduanes, Masbate, and Sorsogon. It has one independent chartered city, Naga City, and six component cities, Iriga City, Legazpi City, Ligao City, Masbate City, Sorsogon City, and Tabaco City. The regional centers are Legazpi City, the region's political Center, and Naga City, the region's most progressive city and its commercial, educational, financial, religious, and cultural center. Inhabitants, called “Bicolanos,” speak any one of several dialects, including Bikol Rinconada (Iriga-Buhi area), Bikol Albay(Albay Province), Bikol Sorsogon (Sorsogon), Bikol Catanduanes and Bikol Partido (municipalities surrounding Lagonoy Gulf). Standard Bikol is Bikol Naga, and it is generally understood by other Bikolspeakers. The Bicol region is often seen as the epicenter of the counter-culture and liberal politics in the Philippines. As many of its inhabitants seem to oppose many right-wing governments and ideology in which they blame for corruption. The region has a political reputation for voting always for the opposition. It is also widely seen as a stronghold for the National Democratic Front. Albay's archaeology shows concrete evidence of trade with China and Malaya/Indonesia going back two thousand years. The first Spanish contact was in 1565 when a treasure galleon returning to Cebu from Acapulco, Mexico, was swept off course and the captain recorded his awe at the sight of Mt. Mayon erupting. Mt.Mayon is the most prominent of the several volcanoes in the province, and one of the most famous jewels of the Pacific Ring of Fire; its eruptions have repeatedly inflicted disaster on the province and enriched the survivors. When at peace, it is a particularly beautiful mountain. Albay has a large amount of rich flat land, and agriculture is the largest component of the provincial economy. Coconuts, rice, abaca, and maize are the chief crops. Handicrafts bolster rural incomes. Commercial fishing is also important, and the province has several thousand manufacturing enterprises. There are plenty of places to visit, offering opportunities to swim at beautiful beaches, scuba-dive to wrecked galleons, explore caves, climb volcanoes, admire waterfalls, lush vegetation, Baroque architecture, etc. Gold mining and jewelry manufacturing continue to distinguish the province. Agriculture and fishing are major factors in the province's economy, and several handicrafts and small-scale industries are widely practiced. Tourism is insignificant, though Daethas become a destination for surfers. Bicol is composed of six provinces and 7 cities.</p>
+
             <h2 style = "text-indent: 40px;">Political Division of Bicol Region </h2>
             <p align = "justify" class = "intro">The region is composed of six provinces, namely, Albay, Camarines Norte, Camarines Sur, Catanduanes, Masbate, and Sorsogon. It has one independent component city, Naga City, and six component cities - Iriga, Legazpi, Ligao, Masbate City, Sorsogon City, and Tabaco. Masbate City and Sorsogon City are cities within their namesake provinces.The regional centers are Legazpi, the political and administrative center; and Naga City, the cultural and religious center. Together with Sorsogon City, they are the leading cities in the region in terms of urbanization and the hub of economic activity.</p>
-            
+
             <h2 style = "text-indent: 40px;">Religion</h2>
             <p align = "justify" class = "intro">The region retains Roman Catholicism as the overwhelming religion of the great majority. The Catholic religion has the highest number of followers in any other area in the Philippines. Fiestas (Feast day of saints) are annual celebrations of parishes, from a simple barrio fiesta honoring a patron associated with a good harvest, to a town fiesta honoring a miraculous saint, or a regional one such as the Our Lady of Peñafrancia Fiesta, a week-long celebration to honor the Virgin Mary, dubbed as the "Queen Patroness of Bicolandia". It is widely acknowledged that in Luzon, it is the Bicol Region that holds the most number of men entering the seminary for the Catholic priesthood, or women entering the religious life to become Catholic nuns.</p>
-        
+
             <h2 style = "text-indent: 40px;">Language</h2>
             <p align = "justify" class = "intro">The people of the Bicol region, called Bicolanos, speak any of the several languages of the Bikol macro language, also called Bikolano, an Austronesian language closely related to other Central Philippine languages such as Cebuano and Tagalog. Bicol languages include the Inland Bikol of Bikol-Rinconada (Rinconada area), Bikol-Albay (Buhi, Cam. Sur; Libon, Oas, Daraga, Albay and Donsol, Sorsogon), Bikol-Pandan (Northern Catanduanes). Standard Bikol is based on the coastal Bikol language of the dialect of Legazpi City and is understood widely throughout the region even though they cannot speak it fluently. The Bikol macro language is the dominant language of the region. The Filipino language (Tagalog) is also spoken in northern parts of Camarines Norte as well as in the municipality of Del Gallego, Camarines Sur. Two Visayan languages, Sorsoganon and Masbateño or Minasbate, are spoken in Masbate and Sorsogon; they are collectively referred to as Bisakol.</p>
-            
+
             <h2 style = "text-indent: 40px;">Tourism</h2>
             <p align = "justify" class = "intro">The region has recently seen a revival in its tourism industry, due to the popularity of Mayon Volcano, the new CamSur Water Sports Complex, and whale shark spotting, among others, which consequently increased the number of upscale resorts in the region. wing to its location, Region V offers plenty of choices for visitors - beautiful natural features like beaches, mountains, and waterfalls with lush vegetation; activities could include scuba diving to wrecked galleons, spelunking, mountaineering; or visits to man-made attractions like church architecture from the Spanish Colonial Period; etc. he municipality of Daet and Catanduanes provinces have long been destinations for surfers. The opening of the Southern Luzon International Airport in Legazpi City, which is under construction, is hoped to further boost tourism in the region.</p>
-            
+
         </div> 
-        
-           
-        <section class = "infoSec">
-            
-        </section>
      <center><footer>&copy 2022 iTour Organization</footer></center> 
+     <script>
+        
+    </script>
     </body>
 </html>
