@@ -16,9 +16,54 @@ img {
     text-indent: 100px;
 }
 
+img:hover{
+    opacity: 75%;
+}
+
 .infoSec{
     height: 500px;
 }
+
+
+.frontImg{
+    max-width: 1000px;
+}
+
+.frontImg:hover{
+    opacity: 75%;
+    
+}
+
+.sideNav{
+    float: left;
+    margin-right: 3px;
+    height: auto;
+    background-color: aqua;
+}
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.airplane{
+    width: 80px; 
+    margin: none; float: left; 
+    margin-left: 50px;
+}
+
+.bar{
+    background-color: #111; 
+    width: 100%;
+}
+
 
 
 

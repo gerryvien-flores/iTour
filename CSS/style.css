@@ -1,10 +1,18 @@
 body {
-margin: 0;
-padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
+.title{
+    position: fixed;
+    top: 0;
+    width: 100%;  
+}
+
+
+
 .navBar{
-    background-color: black;
+    background-color: floralwhite;
 }
 
 ul {
@@ -13,6 +21,9 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #333;
+  position: relative;
+  top: 0;
+  width: 100%;
 }
 
 .navList li {
@@ -32,26 +43,123 @@ li a:hover {
   background-color: #008822;
 }
 
-.title{
-    text-align: center;
+
+.icsLogo{
+    max-width: 100px;
+    height: auto;
 }
 
+
+.description{
+    float: left;
+}
+
+
 .intro{
-    margin-left: 40px;
-    text-indent: 100px;
-    margin-right: 40px;
+    margin-left: 3vw;
+    text-indent: 90px;
+    margin-right: 8vw;
 }
 
 .top10{
-    margin: 10px;
-    margin-left: 40px;
+    margin-left: 1vw;
+    margin-right: 8vw;
 }
 
 .active{
     background-color: #008822
 }
 
+
 footer{
+    position: relative;
     background-color: forestgreen;
     color: whitesmoke;
+}
+
+
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+
+.sidebar {
+  height: 100%; 
+  width: 0; 
+  position: fixed;
+  z-index: 1; 
+  top: 0;
+  left: 0;
+  background-color: #111; 
+  overflow-x: hidden; 
+  padding-top: 60px; 
+  transition: 0.5s; 
+}
+
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  position: relative;
+  width: auto;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+
+#main {
+  transition: margin-left .5s; 
+  padding: 20px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+#top{
+    transition: margin-top .5s;
+}
+
+#fly{
+    transition: float .5s;
 }
