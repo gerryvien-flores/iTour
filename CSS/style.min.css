@@ -12,8 +12,21 @@ img {
     margin-right: auto;
 }
 
+.left{
+    float: left;
+    margin-right: 3vw;
+}
+
+.right{
+    float: right;
+    margin-left: 3vw;
+}
+
 .adjust{
     text-indent: 100px;
+    margin-top: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
 }
 
 img:hover{
@@ -43,7 +56,7 @@ img:hover{
 
 .sidenav {
   height: 100%;
-  width: 200px;
+  max-width: 1000px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -55,7 +68,9 @@ img:hover{
 
 .airplane{
     width: 80px; 
-    margin: none; float: left; 
+    margin: none; 
+    float: left; 
+    position:static;
     margin-left: 50px;
 }
 
@@ -64,8 +79,55 @@ img:hover{
     width: 100%;
 }
 
+#fromRight{
+    display: none;
+}
+
+.division{
+    margin-top: 15vw;
+}
+
+ol{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  width: 100%;
+  margin-left: 1vw;
+}
+
+.mainPage{
+    background-image: url(background/bg3.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.destPage{
+    background-image: linear-gradient(white, grey);
+}
+
+.saucePage{
+    background-image: linear-gradient(white, grey);
+}
 
 
 
 
+@media only screen and (max-width: 600px) {
+  .airplane {
+    display: none;
+  }
+}
+
+ol li h3{
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.contributors{
+    margin-left: 2vw;
+    background-color: white;
+}
 

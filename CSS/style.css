@@ -7,6 +7,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;  
+    
 }
 
 
@@ -16,7 +17,6 @@ body {
 }
 
 ul {
-  list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -56,13 +56,15 @@ li a:hover {
 
 
 .intro{
-    margin-left: 3vw;
+    margin-left: 8vw;
     text-indent: 90px;
     margin-right: 8vw;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .top10{
-    margin-left: 1vw;
+    margin-left: 6vw;
     margin-right: 8vw;
 }
 
@@ -75,6 +77,7 @@ footer{
     position: relative;
     background-color: forestgreen;
     color: whitesmoke;
+    margin-top: 6vw;
 }
 
 
@@ -139,6 +142,7 @@ footer{
   border: none;
   position: relative;
   width: auto;
+  max-width: 1000px;
 }
 
 .openbtn:hover {
@@ -162,4 +166,15 @@ footer{
 
 #fly{
     transition: float .5s;
+}
+
+.headers{
+    text-indent: 40px; 
+    margin-left: 8vw;
+    font-size: 30px;
+    text-align: justify-all;
+}
+
+.aboutPage{
+    background-image:url(background/bg7.png);
 }
